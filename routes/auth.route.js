@@ -5,7 +5,7 @@ import { GoogleAuth, logOut, useCoins } from "../controllers/auth.controller.js"
 const authRouter = express.Router()
 
 authRouter.post("/login", GoogleAuth)
-authRouter.get("/logout", logOut)
+authRouter.post("/logout", logOut)
 authRouter.post("/user-coins", useCoins)
 
 export default authRouter
