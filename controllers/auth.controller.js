@@ -3,7 +3,6 @@ import { getAuth } from "firebase-admin/auth"
 import  User  from "../models/user.model.js"
 import crypto from 'crypto'
 import redis from "../configs/redis.js"
-import { json } from "stream/consumers"
 
 
 export const GoogleAuth = async (req, res) => {
